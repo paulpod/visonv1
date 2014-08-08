@@ -12,4 +12,6 @@ TO DO
 - edit copy in questions
 - remove medications table, put at 'TOP' for all medical conditions?
 - move consent at 'TOP' along with user + doctor details?
-- 
+
+
+/
