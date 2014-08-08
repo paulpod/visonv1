@@ -1,0 +1,470 @@
+/* housekeeping */
+div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark {
+border: none;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+/* layout */
+
+
+.visuallyhidden {
+position: absolute;
+left: -9999em;
+}
+
+form:after, fieldset:after, .optional-section:after, .help-content:after, #found-addresses:after, .validation-wrapper:after, .confirmation div:after, .article:after {
+content: "";
+display: block;
+clear: both;
+}
+
+.question {
+	width: 64%;
+	margin: 0 0 3em 0;
+}
+
+#banner {
+	background-color:#fd894c;
+	padding:1.5em;
+}
+
+#content {
+text-align: left;
+margin: 0 auto;
+width: auto;
+max-width: 1020px;
+padding-left:23px;
+font-family: "nta", Arial, sans-serif;
+font-size: 19px;
+line-height: 1.31579;
+font-weight: 400;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+}
+
+#driver-col {
+	width: 428px;
+	float:left;
+	margin-right:30px;
+	
+}
+
+#vehicle-col {
+}
+
+
+
+
+/* quickndirty header */
+#logo {
+float: left;
+position: relative;
+top: 10px;
+height: 30px;
+overflow: visible;
+vertical-align: baseline;
+color: white;
+font-weight: bold;
+font-size: 30px;
+line-height: 1em;
+text-decoration: none;
+text-rendering: optimizeLegibility;
+margin-bottom: -1px;
+padding-bottom: -5px;
+}
+
+.blackbar {
+background-color: #0b0c0c;
+max-width: 100%;
+padding-top: 0px;
+padding-bottom: -10px;
+}
+
+.blackheader {
+max-width:990px;
+margin: 0 auto 0 auto;
+border-bottom: 1px #0b0c0c solid;
+display: block;
+}
+
+.blueheader {
+max-width:990px;
+margin: 0 auto 0 auto;
+border-bottom: 10px #005ea5 solid;
+}
+
+.header-logo {
+padding-top: 10px;
+margin: 0 0 50px 0;
+}
+
+
+
+
+/* style */
+body {
+font-size: 160%;
+margin: 0;
+color: #0b0c0c;
+line-height: 1.5;
+font-weight: 400;
+-webkit-font-smoothing: antialiased;
+font-family: "nta", Arial, sans-serif;
+}
+
+
+a:link {
+color: #005ea5;
+}
+a:visited {
+color: #2e8aca;
+}
+a {
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+
+a:focus {
+background-color: #ffbf47;
+outline: 3px solid #ffbf47;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus,
+#global-header input:focus {
+outline: 3px solid #ffbf47;
+}
+
+h1 {
+font-size: 27px;
+line-height: 1.111;
+margin:0.5em 0 0.5em 0;
+}
+.heading-xlarge {
+font-family: "nta", Arial, sans-serif;
+font-size: 48px;
+line-height: 1.04167;
+font-weight: 400;
+text-transform: none;
+font-weight: 700;
+margin-top: 0.46875em;
+margin-bottom: 0.9375em;
+}
+.heading-large {
+font-family: "nta", Arial, sans-serif;
+font-size: 36px;
+line-height: 1.04167;
+font-weight: 400;
+text-transform: none;
+font-weight: 700;
+margin-top: 0.46875em;
+margin-bottom: 0.9375em;
+}
+.heading-medium {
+font-family: "nta", Arial, sans-serif;
+font-size: 24px;
+line-height: 1.04167;
+font-weight: 400;
+text-transform: none;
+font-weight: 700;
+margin-top: 0.66em;
+margin-bottom: 0.33em;
+}
+.caps {
+text-transform: uppercase;
+}
+
+.heading-secondary {
+font-family: "nta", Arial, sans-serif;
+font-size: 27px;
+line-height: 1.11111;
+font-weight: 400;
+text-transform: none;
+display: block;
+color: #6f777b;
+}
+
+p {
+}
+
+.optional-section, .help-content, .revealed-content {
+border-left: #bfc1c3 solid 4px;
+padding: 14px 0 14px 24px;
+margin: 1em 0;
+}
+
+.optional-section, .help-content {
+border-left: #bfc1c3 solid 4px;
+padding: 14px 0 14px 14px;
+margin-bottom: 1em;
+clear: both;
+}
+
+.qcount {
+font-family: "nta", Arial, sans-serif;
+font-size: 16px;
+line-height: 1.25;
+font-weight: 300;
+text-transform: none;
+color:#6f777b;
+margin:0 0 1em 0;
+}
+
+
+
+/* tables */
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width: 100%; 
+display: table;
+border-collapse: separate;
+-webkit-border-horizontal-spacing: 2px;
+-webkit-border-vertical-spacing: 2px;
+border-top-color: gray;
+}
+
+table th, table td {
+font-family: "nta", Arial, sans-serif;
+font-size: 18px;
+line-height: 1.25;
+font-weight: 300;
+text-transform: none;
+padding: 0.73684em 1.05263em 0.52632em 0;
+text-align: left;
+color: #0b0c0c;
+display: table-cell;
+vertical-align: top;
+}
+.tabledata {
+font-weight:700;
+}
+.tablelegend {
+width: 48%;
+}
+
+
+/* forms */
+a.back-to-previous, a.back-to-previous:active, a.back-to-previous:hover, a.back-to-previous:focus {
+color: #0b0c0c;
+}
+
+.back-to-previous {
+font-family: "nta", Arial, sans-serif;
+font-size: 16px;
+line-height: 1.25;
+font-weight: 300;
+text-transform: none;
+display: block;
+position: static;
+text-decoration: none;
+border-bottom: #0b0c0c 1px solid;
+width: 2.25em;
+background: url("images/icon-caret-left.png") left 0.2em no-repeat;
+padding-left: 0.75em;
+text-align: right;
+margin: 2em 0 2em 0;
+overflow: hidden;
+}
+
+.form-group {
+}
+
+.form-group-related {
+}
+
+.form-group:after {
+}
+
+fieldset {
+margin-left: 0;
+border: none;
+padding: 0;
+}
+
+.inline-fields .field-wrapper {
+display: -moz-inline-stack;
+display: inline-block;
+}
+
+.inline-fields label {
+margin-bottom: 0.5em;
+}
+
+.inline-fields input.text {
+margin-right: 1em;
+}
+
+fieldset :last-child, .optional-section :last-child, .help-content :last-child {
+margin-bottom: 0;
+}
+
+
+
+label, textarea, .search, .next {
+display: inline-block;
+}
+
+label, .label, select, input, textarea {
+font-family: "nta", Arial, sans-serif;
+font-size: 19px;
+line-height: 1.31579;
+font-weight: 400;
+text-transform: none;
+}
+
+label.selectable {
+display: inline-block;
+position: relative;
+background: #F0F0F0;
+overflow: hidden;
+cursor: pointer;
+}
+
+
+
+label.selected {
+border: 1px solid #555;
+background: #fff;
+}
+
+
+.block-label {
+display: inline-block;
+position: relative;
+float:left;
+background-color: #f0f0f0;
+border: 1px solid #f0f0f0;
+padding: 18px 30px 15px 45px;
+margin: 10px 20px 10px 0;
+cursor: pointer;
+}
+
+.block-label.column {
+clear:left;
+}
+
+.block-label input {
+position: absolute;
+top: 18px;
+left: 15px;
+cursor: pointer;
+}
+
+input[type="checkbox"] {
+background: yellow;
+}
+
+input[type="radio"] {
+}
+
+input[type="radio"], input[type="checkbox"] {
+}
+
+input, input[type="password"], input[type="search"] {
+}
+
+input, textarea, keygen, select, button {
+}
+
+
+input, textarea, keygen, select, button, meter, progress {
+-webkit-writing-mode: horizontal-tb;
+}
+
+
+input.text {
+width: auto;
+}
+
+
+input.text {
+text-transform: none;
+border: 1px solid #bbb;
+margin: 0 0 1em;
+padding: 0.5em;
+}
+
+input.day, input.month {
+width: 2.75em;
+}
+
+input.year {
+width: 4.25em;
+}
+
+input[type=number] {
+-moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.button {
+background-color: #00823b;
+position: relative;
+display: -moz-inline-stack;
+display: inline-block;
+padding: 0.3em 0.6em 0.2em 0.6em;
+border: none;
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-webkit-box-shadow: 0 2px 0 #003518;
+-moz-box-shadow: 0 2px 0 #003518;
+box-shadow: 0 2px 0 #003518;
+font-size: 0.8em;
+line-height: 1.25;
+text-decoration: none;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+color: #fff;
+margin: 0 15px 15px 0;
+padding: 0.52632em 0.78947em 0.26316em 0.78947em;
+vertical-align: top;
+font-family: "nta", Arial, sans-serif;
+}
+
+.next, .search {
+box-sizing: border-box;
+font-size: 19px;
+text-align: center;
+clear: both;
+margin: 0 0 2em 0;
+}
+
+.next {
+font-family: "nta", Arial, sans-serif;
+font-size: 19px;
+line-height: 1.31579;
+font-weight: 400;
+text-transform: none;
+padding: 0.6em 0.8em 0.5em 0.8em;
+}
+
+
+
+.toggle-closed {
+background: url("images/icon-caret-right.png") left 0.3em no-repeat;
+padding-left: 0.75em;
+margin: 0.5em 0 0 0;
+}
+
+.toggle-open {
+background: url("images/icon-caret-down.png") left 0.3em no-repeat;
+padding-left: 0.75em;
+margin: 0.5em 0 0 0;
+}
+
+
+
